@@ -1,0 +1,58 @@
+data.type:
+- 0: image
+- 1: gif
+- 2: video
+
+
+PUSH IMAGE
+{
+	"aps":{
+		"alert":{
+ 			"title":"Custom Notification Content",
+ 			"subtitle":"Push image",
+ 			"body":"Pull down to get more"
+ 		},
+ 		"category":"CustomNotification",
+		"mutable-content":1
+	},
+	"type":0,
+	"attachment-url":"http://img.f21.ngoisao.vnecdn.net/2017/02/26/hot414-jpeg-3539-1488052314_490x294.jpg"
+}
+
+PUSH video
+{
+	"aps":{
+		"alert":{
+ 			"title":"Custom Notification Content",
+ 			"subtitle":"Push video",
+ 			"body":"Pull down to get more"
+ 		},
+ 		"category":"CustomNotification",
+		"mutable-content":1
+	},
+	"type":2,
+	"attachment-url":"https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+}
+
+https://www.youtube.com/watch?v=1kFIq-9TZLQ
+
+PUSH gif
+{
+    "aps": {
+        "alert":{
+ 			"title":"Custom Notification Content",
+ 			"subtitle":"Push image gif",
+ 			"body":"Pull down to get more"
+ 		},
+        "mutable-content": 1
+    },
+    "type":1,
+    "attachment-url": "https://api.buienradar.nl/Image/1.0/RadarMapNL"
+}
+
+
+
+
+
+SIRI
+Send a messenge to Lam for iOSExtension
