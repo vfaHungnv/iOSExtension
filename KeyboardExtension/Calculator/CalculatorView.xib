@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalculatorView" customModule="KeyboardExtension" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jC-T1-djG" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="327" y="8" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Fnh-gX-VPG"/>
+                        <constraint firstAttribute="width" secondItem="0jC-T1-djG" secondAttribute="height" multiplier="1:1" id="etI-D4-8YL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="iN0-l3-epB" eventType="touchUpInside" id="dXR-xr-VHO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuj-xn-2UV" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="327" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tuj-xn-2UV" secondAttribute="height" multiplier="1:1" id="2Zg-sC-gKO"/>
+                        <constraint firstAttribute="width" constant="40" id="yuy-s1-lz9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-2" eventType="touchUpInside" id="QG5-qw-0fy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3k-6W-p03" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="327" y="104" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x3k-6W-p03" secondAttribute="height" multiplier="1:1" id="4If-sR-fXX"/>
+                        <constraint firstAttribute="width" constant="40" id="R9I-Xc-o1X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="*">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-2" eventType="touchUpInside" id="qOi-Ef-Cu9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLh-Di-I9c" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="327" y="152" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="pzX-MS-WNZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="/">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-2" eventType="touchUpInside" id="Xdo-LK-P46"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZL-2C-IDQ" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="279" y="8" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1ZL-2C-IDQ" secondAttribute="height" multiplier="1:1" id="cXq-oZ-afA"/>
+                        <constraint firstAttribute="width" constant="40" id="mRy-n7-vHo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bja-nn-mPq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56D-kl-YhZ" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="279" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Qd6-O4-SEd"/>
+                        <constraint firstAttribute="width" secondItem="56D-kl-YhZ" secondAttribute="height" multiplier="1:1" id="xR2-qQ-gPc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="3Xa-OG-u8v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGZ-6X-oQb" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="279" y="104" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="DCn-ov-z0l"/>
+                        <constraint firstAttribute="width" secondItem="KGZ-6X-oQb" secondAttribute="height" multiplier="1:1" id="kiT-Kh-qOQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="9b3-JH-hhW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-Uu-PEf" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="279" y="152" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="H1f-UH-PMJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title=".">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapDot:" destination="iN0-l3-epB" eventType="touchUpInside" id="dFK-TZ-cMt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6Y-iH-PP6" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="231" y="8" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="H6Y-iH-PP6" secondAttribute="height" multiplier="1:1" id="3uQ-ag-4Gh"/>
+                        <constraint firstAttribute="width" constant="40" id="SAL-fQ-dbu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="TUp-iH-und"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdG-dx-fmA" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="231" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QdG-dx-fmA" secondAttribute="height" multiplier="1:1" id="MK2-SG-bQ8"/>
+                        <constraint firstAttribute="width" constant="40" id="kRy-Zc-zVv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="fLP-fc-g0Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6Q-ZO-eWX" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="231" y="104" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="V6Q-ZO-eWX" secondAttribute="height" multiplier="1:1" id="4sR-W0-whO"/>
+                        <constraint firstAttribute="width" constant="40" id="5tk-ET-Idx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="CBU-7r-uU7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pne-8g-4Wv" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="231" y="152" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="PeZ-DI-yRy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="0">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="NSo-Zs-8B0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syH-hc-bOD" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="183" y="8" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8VD-Va-bqq"/>
+                        <constraint firstAttribute="width" secondItem="syH-hc-bOD" secondAttribute="height" multiplier="1:1" id="etQ-2o-n50"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="BvM-iw-HhM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJD-vW-Geb" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="183" y="104" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yJD-vW-Geb" secondAttribute="height" multiplier="1:1" id="1K4-lE-Zvp"/>
+                        <constraint firstAttribute="width" constant="40" id="Ygv-qF-eAi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="Wz6-0a-m0i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ec-fL-PZ6" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="183" y="152" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="26o-80-ryU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="C">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapClear:" destination="iN0-l3-epB" eventType="touchUpInside" id="X2h-mv-n8F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmx-mr-4vW" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="8" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8aI-Km-7gU"/>
+                        <constraint firstAttribute="width" secondItem="fmx-mr-4vW" secondAttribute="height" multiplier="1:1" id="JR6-l1-uBr"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                    <state key="normal" image="icon_language">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapLanguage:" destination="-2" eventType="touchUpInside" id="BSH-Rc-j0P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKb-xY-qar" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="8" y="104" width="167" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Bcg-hC-R7K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Next Keyboard">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNextKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="fap-ia-gl7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-Y5-JdB" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="8" y="152" width="167" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="=">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapEqual:" destination="-2" eventType="touchUpInside" id="65u-Qt-JMJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-OK-4Gx" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="183" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1pE-OK-4Gx" secondAttribute="height" multiplier="1:1" id="l3S-bU-qna"/>
+                        <constraint firstAttribute="width" constant="40" id="y26-Nf-Nng"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-2" eventType="touchUpInside" id="7qh-rm-Csq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-rb-vsW" customClass="RoundLabel" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="167" height="40"/>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.21176470588235294" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hU5-VL-Od2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixi-J1-E15" customClass="RoundButton" customModule="KeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="135" y="56" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.36078431370000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="25z-2n-gvk"/>
+                        <constraint firstAttribute="height" constant="40" id="axb-Zu-8fJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="-/+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapCHSPress:" destination="-2" eventType="touchUpInside" id="ety-sq-DiU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.086274509799999996" green="0.25098039220000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yJD-vW-Geb" firstAttribute="top" secondItem="1pE-OK-4Gx" secondAttribute="bottom" constant="8" id="04J-X4-xFy"/>
+                <constraint firstAttribute="bottom" secondItem="4ec-fL-PZ6" secondAttribute="bottom" constant="8" id="1jT-Yj-VIY"/>
+                <constraint firstItem="x3k-6W-p03" firstAttribute="top" secondItem="Tuj-xn-2UV" secondAttribute="bottom" constant="8" id="2Ak-Xt-2OY"/>
+                <constraint firstItem="pne-8g-4Wv" firstAttribute="leading" secondItem="4ec-fL-PZ6" secondAttribute="trailing" constant="8" id="3Di-I0-fe3"/>
+                <constraint firstItem="0jC-T1-djG" firstAttribute="leading" secondItem="1ZL-2C-IDQ" secondAttribute="trailing" constant="8" id="3Ma-V4-QT5"/>
+                <constraint firstItem="syH-hc-bOD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="4OP-5Q-j2A"/>
+                <constraint firstItem="KGZ-6X-oQb" firstAttribute="leading" secondItem="V6Q-ZO-eWX" secondAttribute="trailing" constant="8" id="5vb-03-i9y"/>
+                <constraint firstAttribute="trailing" secondItem="Tuj-xn-2UV" secondAttribute="trailing" constant="8" id="5vr-d8-New"/>
+                <constraint firstItem="fmx-mr-4vW" firstAttribute="top" secondItem="u1A-rb-vsW" secondAttribute="bottom" constant="8" id="73u-G0-sbu"/>
+                <constraint firstItem="56D-kl-YhZ" firstAttribute="top" secondItem="1ZL-2C-IDQ" secondAttribute="bottom" constant="8" id="7Pa-cH-m1C"/>
+                <constraint firstItem="TcF-Y5-JdB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Cuf-b6-dx2"/>
+                <constraint firstItem="PJO-Uu-PEf" firstAttribute="leading" secondItem="pne-8g-4Wv" secondAttribute="trailing" constant="8" id="Dsu-dE-8dX"/>
+                <constraint firstAttribute="bottom" secondItem="pne-8g-4Wv" secondAttribute="bottom" constant="8" id="Fuw-GA-QZD"/>
+                <constraint firstItem="vLh-Di-I9c" firstAttribute="leading" secondItem="PJO-Uu-PEf" secondAttribute="trailing" constant="8" id="HOI-VK-iKo"/>
+                <constraint firstItem="4ec-fL-PZ6" firstAttribute="top" secondItem="yJD-vW-Geb" secondAttribute="bottom" constant="8" id="Hfg-lR-gpy"/>
+                <constraint firstItem="QdG-dx-fmA" firstAttribute="leading" secondItem="1pE-OK-4Gx" secondAttribute="trailing" constant="8" id="IYk-Dd-d2p"/>
+                <constraint firstAttribute="trailing" secondItem="0jC-T1-djG" secondAttribute="trailing" constant="8" id="O7H-F0-5Ly"/>
+                <constraint firstAttribute="trailing" secondItem="vLh-Di-I9c" secondAttribute="trailing" constant="8" id="PQD-r7-clZ"/>
+                <constraint firstAttribute="bottom" secondItem="TcF-Y5-JdB" secondAttribute="bottom" constant="8" id="Q0x-V0-0KD"/>
+                <constraint firstItem="1ZL-2C-IDQ" firstAttribute="leading" secondItem="H6Y-iH-PP6" secondAttribute="trailing" constant="8" id="R0y-Ty-yd5"/>
+                <constraint firstItem="HKb-xY-qar" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Snt-ky-4DL"/>
+                <constraint firstItem="u1A-rb-vsW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Tc8-IY-a1X"/>
+                <constraint firstItem="1pE-OK-4Gx" firstAttribute="leading" secondItem="Ixi-J1-E15" secondAttribute="trailing" constant="8" id="Tmd-fO-r3F"/>
+                <constraint firstItem="V6Q-ZO-eWX" firstAttribute="top" secondItem="QdG-dx-fmA" secondAttribute="bottom" constant="8" id="VyD-XD-r4t"/>
+                <constraint firstItem="u1A-rb-vsW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="YKp-RZ-qvj"/>
+                <constraint firstItem="H6Y-iH-PP6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="YNg-FA-HRy"/>
+                <constraint firstItem="56D-kl-YhZ" firstAttribute="leading" secondItem="QdG-dx-fmA" secondAttribute="trailing" constant="8" id="Zy9-zU-fg6"/>
+                <constraint firstItem="V6Q-ZO-eWX" firstAttribute="leading" secondItem="yJD-vW-Geb" secondAttribute="trailing" constant="8" id="apc-A7-27n"/>
+                <constraint firstItem="HKb-xY-qar" firstAttribute="top" secondItem="Ixi-J1-E15" secondAttribute="bottom" constant="8" id="axa-80-KnD"/>
+                <constraint firstAttribute="bottom" secondItem="PJO-Uu-PEf" secondAttribute="bottom" constant="8" id="b15-Bz-JPR"/>
+                <constraint firstAttribute="bottom" secondItem="vLh-Di-I9c" secondAttribute="bottom" constant="8" id="bLV-iz-WuD"/>
+                <constraint firstItem="pne-8g-4Wv" firstAttribute="top" secondItem="V6Q-ZO-eWX" secondAttribute="bottom" constant="8" id="bOy-at-md1"/>
+                <constraint firstItem="KGZ-6X-oQb" firstAttribute="top" secondItem="56D-kl-YhZ" secondAttribute="bottom" constant="8" id="bdv-yq-fhp"/>
+                <constraint firstItem="TcF-Y5-JdB" firstAttribute="top" secondItem="HKb-xY-qar" secondAttribute="bottom" constant="8" id="chR-wB-zv6"/>
+                <constraint firstItem="syH-hc-bOD" firstAttribute="leading" secondItem="u1A-rb-vsW" secondAttribute="trailing" constant="8" id="d9n-yu-rCI"/>
+                <constraint firstItem="H6Y-iH-PP6" firstAttribute="leading" secondItem="syH-hc-bOD" secondAttribute="trailing" constant="8" id="ev8-OF-d7L"/>
+                <constraint firstItem="fmx-mr-4vW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fz5-6s-S6e"/>
+                <constraint firstItem="Tuj-xn-2UV" firstAttribute="leading" secondItem="56D-kl-YhZ" secondAttribute="trailing" constant="8" id="keg-em-vWI"/>
+                <constraint firstItem="Ixi-J1-E15" firstAttribute="top" secondItem="u1A-rb-vsW" secondAttribute="bottom" constant="8" id="kuC-gI-mtM"/>
+                <constraint firstItem="HKb-xY-qar" firstAttribute="top" secondItem="fmx-mr-4vW" secondAttribute="bottom" constant="8" id="msX-h4-mXa"/>
+                <constraint firstItem="1ZL-2C-IDQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="msr-bW-JaB"/>
+                <constraint firstItem="QdG-dx-fmA" firstAttribute="top" secondItem="H6Y-iH-PP6" secondAttribute="bottom" constant="8" id="nrO-Bd-iVk"/>
+                <constraint firstAttribute="trailing" secondItem="x3k-6W-p03" secondAttribute="trailing" constant="8" id="om9-Mw-Gbu"/>
+                <constraint firstItem="Tuj-xn-2UV" firstAttribute="top" secondItem="0jC-T1-djG" secondAttribute="bottom" constant="8" id="oyX-Yl-Dwd"/>
+                <constraint firstItem="Ixi-J1-E15" firstAttribute="width" secondItem="Ixi-J1-E15" secondAttribute="height" multiplier="1:1" id="pCO-PY-HZx"/>
+                <constraint firstItem="PJO-Uu-PEf" firstAttribute="top" secondItem="KGZ-6X-oQb" secondAttribute="bottom" constant="8" id="qW4-qG-NoP"/>
+                <constraint firstItem="x3k-6W-p03" firstAttribute="leading" secondItem="KGZ-6X-oQb" secondAttribute="trailing" constant="8" id="qq5-Ny-dhO"/>
+                <constraint firstItem="vLh-Di-I9c" firstAttribute="top" secondItem="x3k-6W-p03" secondAttribute="bottom" constant="8" id="sGe-ky-O2P"/>
+                <constraint firstItem="1pE-OK-4Gx" firstAttribute="top" secondItem="syH-hc-bOD" secondAttribute="bottom" constant="8" id="wX1-Nw-8Jr"/>
+                <constraint firstItem="0jC-T1-djG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="wqj-WN-3KM"/>
+                <constraint firstItem="yJD-vW-Geb" firstAttribute="leading" secondItem="HKb-xY-qar" secondAttribute="trailing" constant="8" id="yJ0-8Z-IR4"/>
+                <constraint firstItem="4ec-fL-PZ6" firstAttribute="leading" secondItem="TcF-Y5-JdB" secondAttribute="trailing" constant="8" id="zNG-o5-r0R"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblDisplay" destination="u1A-rb-vsW" id="Ear-x0-UWR"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_language" width="100" height="100"/>
+    </resources>
+</document>

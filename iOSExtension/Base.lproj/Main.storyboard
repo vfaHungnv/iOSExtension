@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zn2-If-FYn">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iOS Extensions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="iOSExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tR-BY-Hg6">
+                                <rect key="frame" x="40" y="94" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2de-vU-oau"/>
+                                    <constraint firstAttribute="width" secondItem="1tR-BY-Hg6" secondAttribute="height" multiplier="48:7" id="CUv-iU-Xiy"/>
+                                </constraints>
+                                <state key="normal" title="Custom keyboard">
+                                    <color key="titleColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actCustomKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4L-q5-Xxo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upw-uu-csx">
+                                <rect key="frame" x="40" y="149" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Upw-uu-csx" secondAttribute="height" multiplier="48:7" id="DCc-HM-EYD"/>
+                                    <constraint firstAttribute="height" constant="35" id="Wru-8Y-BtI"/>
+                                </constraints>
+                                <state key="normal" title="Local push notification">
+                                    <color key="titleColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actLocalPushNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKX-bJ-x0R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1tR-BY-Hg6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Lo-0J-pe1"/>
+                            <constraint firstItem="Upw-uu-csx" firstAttribute="top" secondItem="1tR-BY-Hg6" secondAttribute="bottom" constant="20" id="UCf-JC-hd9"/>
+                            <constraint firstItem="Upw-uu-csx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5E-fh-TjA"/>
+                            <constraint firstItem="1tR-BY-Hg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="q4G-Dr-U7Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iOS Extensions" id="xcv-2X-mOf"/>
+                    <connections>
+                        <outlet property="btnCustomKeyboard" destination="1tR-BY-Hg6" id="2YC-MB-7fl"/>
+                        <outlet property="btnLocalPushNoti" destination="Upw-uu-csx" id="tBd-OZ-1Qx"/>
+                        <segue destination="ifR-Ti-VKC" kind="push" id="0LW-fY-ieI"/>
+                        <segue destination="oCh-gm-OUJ" kind="push" id="ReZ-d2-Y5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="264"/>
+        </scene>
+        <!--Local push notification-->
+        <scene sceneID="owO-h8-wwJ">
+            <objects>
+                <viewController storyboardIdentifier="localPushNotiVC" id="ifR-Ti-VKC" customClass="LocalPushViewController" customModule="iOSExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNg-CR-kqC"/>
+                        <viewControllerLayoutGuide type="bottom" id="azz-di-LPU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DCl-1r-qCc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUU-T2-rDA" userLabel="btnSimplePush">
+                                <rect key="frame" x="40" y="84" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rcf-J6-k1l"/>
+                                </constraints>
+                                <state key="normal" title="Simple push">
+                                    <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actSimplePush:" destination="ifR-Ti-VKC" eventType="touchUpInside" id="q0m-nb-4Hy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xg-aI-tIl">
+                                <rect key="frame" x="40" y="134" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CQi-rN-gY1"/>
+                                </constraints>
+                                <state key="normal" title="Custom action">
+                                    <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actCustomAction:" destination="ifR-Ti-VKC" eventType="touchUpInside" id="aDs-js-gZz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-jv-iBx">
+                                <rect key="frame" x="40" y="184" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="vAU-DH-scj"/>
+                                </constraints>
+                                <state key="normal" title="Custom content">
+                                    <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actCustomContent:" destination="ifR-Ti-VKC" eventType="touchUpInside" id="YVf-dy-KaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1h7-bV-H1k">
+                                <rect key="frame" x="40" y="234" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="TIr-7C-0YJ"/>
+                                </constraints>
+                                <state key="normal" title="Media push">
+                                    <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actMedia:" destination="ifR-Ti-VKC" eventType="touchUpInside" id="EWp-Mg-zdK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YUU-T2-rDA" firstAttribute="top" secondItem="kNg-CR-kqC" secondAttribute="bottom" constant="20" id="5HG-LK-Xrl"/>
+                            <constraint firstItem="YUU-T2-rDA" firstAttribute="width" secondItem="YUU-T2-rDA" secondAttribute="height" multiplier="48:7" id="H6Y-h7-stp"/>
+                            <constraint firstItem="YUU-T2-rDA" firstAttribute="centerX" secondItem="DCl-1r-qCc" secondAttribute="centerX" id="LJA-9A-x0s"/>
+                            <constraint firstItem="1h7-bV-H1k" firstAttribute="width" secondItem="1h7-bV-H1k" secondAttribute="height" multiplier="48:7" id="LpQ-g2-wUw"/>
+                            <constraint firstItem="1h7-bV-H1k" firstAttribute="top" secondItem="Cyr-jv-iBx" secondAttribute="bottom" constant="15" id="NwE-Bm-BbX"/>
+                            <constraint firstItem="Cyr-jv-iBx" firstAttribute="top" secondItem="1Xg-aI-tIl" secondAttribute="bottom" constant="15" id="RD5-iY-CmE"/>
+                            <constraint firstItem="1Xg-aI-tIl" firstAttribute="centerX" secondItem="DCl-1r-qCc" secondAttribute="centerX" id="VmR-qN-j0a"/>
+                            <constraint firstItem="Cyr-jv-iBx" firstAttribute="centerX" secondItem="DCl-1r-qCc" secondAttribute="centerX" id="b2e-ay-yjm"/>
+                            <constraint firstItem="1Xg-aI-tIl" firstAttribute="width" secondItem="1Xg-aI-tIl" secondAttribute="height" multiplier="48:7" id="iLD-XF-FcK"/>
+                            <constraint firstItem="1Xg-aI-tIl" firstAttribute="top" secondItem="YUU-T2-rDA" secondAttribute="bottom" constant="15" id="lg7-n6-UFD"/>
+                            <constraint firstItem="Cyr-jv-iBx" firstAttribute="width" secondItem="Cyr-jv-iBx" secondAttribute="height" multiplier="48:7" id="yJm-G4-rD8"/>
+                            <constraint firstItem="1h7-bV-H1k" firstAttribute="centerX" secondItem="DCl-1r-qCc" secondAttribute="centerX" id="zYp-DB-JCA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Local push notification" id="F1k-6A-ysY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="cgm-Nn-ze6"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnCustomAction" destination="1Xg-aI-tIl" id="6eG-bq-MVa"/>
+                        <outlet property="btnCustomContent" destination="Cyr-jv-iBx" id="8yK-ea-o9H"/>
+                        <outlet property="btnMediaPush" destination="1h7-bV-H1k" id="23w-ap-B5v"/>
+                        <outlet property="btnSimplePush" destination="YUU-T2-rDA" id="Ife-Fi-PSU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6FH-np-Def" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="596"/>
+        </scene>
+        <!--Custom keyboard-->
+        <scene sceneID="Vyn-SP-ovo">
+            <objects>
+                <viewController storyboardIdentifier="keyboardVC" id="oCh-gm-OUJ" customClass="CustomKeyboardViewController" customModule="iOSExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dWw-9B-0wl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygS-SN-aDn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lt3-ke-sUf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-V8-vPB">
+                                <rect key="frame" x="15" y="84" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="79i-tA-acP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="W2t-V8-vPB" firstAttribute="leading" secondItem="lt3-ke-sUf" secondAttribute="leading" constant="15" id="ckc-6p-7Xw"/>
+                            <constraint firstItem="W2t-V8-vPB" firstAttribute="top" secondItem="dWw-9B-0wl" secondAttribute="bottom" constant="20" id="h7E-2G-dI2"/>
+                            <constraint firstAttribute="trailing" secondItem="W2t-V8-vPB" secondAttribute="trailing" constant="15" id="tdq-F9-gNl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom keyboard" id="9SB-5m-FPk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="LyT-av-e1E"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyF-Sg-aV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="-81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u8b-yo-nIP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zn2-If-FYn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sB0-bA-R4G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JW1-7p-ZPg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vxf-qO-Mea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="264"/>
+        </scene>
+    </scenes>
+</document>
