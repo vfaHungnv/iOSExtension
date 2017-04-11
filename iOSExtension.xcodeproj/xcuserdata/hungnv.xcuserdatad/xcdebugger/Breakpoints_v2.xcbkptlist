@@ -155,38 +155,6 @@
             endingLineNumber = "16"
             landmarkName = "-contactsMatchingName:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UCAddressBookManager contactsMatchingName:]"
-                  moduleName = "DemoSiriIntentUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hungnv/Study/iOS/iOSExtension/iOSExtension/Helpers/UnicornCore/UCAddressBookManager.m"
-                  timestampString = "513012680.024758"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "144">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UCAddressBookManager contactsMatchingName:]"
-                  moduleName = "DemoSiriIntentUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hungnv/Study/iOS/iOSExtension/iOSExtension/Helpers/UnicornCore/UCAddressBookManager.m"
-                  timestampString = "513012680.027094"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "160">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
