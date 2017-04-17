@@ -62,7 +62,16 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(content.copy() as! UNNotificationContent)
             break
             
-        default:
+        case .Video:
+            guard let attachmentURL = content.userInfo["attachment-url"] as? String else {
+                return failEarly()
+            }
+            
+            guard let imageData = NSData(contentsOf:NSURL(string: attachmentURL)! as URL) else { return failEarly() }
+            guard let attachment = UNNotificationAttachment.create(imageFileIdentifier: "video.mp4", data: imageData, options: nil) else { return failEarly() }
+            
+            content.attachments = [attachment]
+            contentHandler(content.copy() as! UNNotificationContent)
             break
         }
     }

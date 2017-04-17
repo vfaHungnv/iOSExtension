@@ -43,6 +43,7 @@ class LocalPushViewController: UIViewController {
         let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "Snooze", options: [])
         let commentAction = UNTextInputNotificationAction(identifier: "Comment", title: "Add Comment", options: [], textInputButtonTitle: "Add", textInputPlaceholder: "Add Comment Here")
         let deleteAction = UNNotificationAction(identifier: "UYLDeleteAction", title: "Delete", options: [.destructive])
+        
         let category = UNNotificationCategory(identifier: "UYLCategoryIdentifier", actions: [snoozeAction, commentAction, deleteAction], intentIdentifiers: [], options: [])
         content.categoryIdentifier = "UYLCategoryIdentifier"
         

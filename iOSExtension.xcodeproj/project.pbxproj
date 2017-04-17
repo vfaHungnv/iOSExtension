@@ -16,6 +16,7 @@
 		481AF9461E9C6EBE0044A40B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481AF9441E9C6EBE0044A40B /* MainInterface.storyboard */; };
 		481AF9481E9C6EBE0044A40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481AF9471E9C6EBE0044A40B /* Assets.xcassets */; };
 		481AF94C1E9C6EBE0044A40B /* iMessageExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 481AF93F1E9C6EBE0044A40B /* iMessageExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		481AFA191E9CC3AB0044A40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4830D6EA1E7A77DE00A0A869 /* Assets.xcassets */; };
 		48252BFB1E8B9BE7009414E3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48252BFA1E8B9BE7009414E3 /* Helpers.swift */; };
 		4830D6E41E7A77DE00A0A869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830D6E31E7A77DE00A0A869 /* AppDelegate.swift */; };
 		4830D6E91E7A77DE00A0A869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4830D6E71E7A77DE00A0A869 /* Main.storyboard */; };
@@ -156,6 +157,16 @@
 		481AF9451E9C6EBE0044A40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		481AF9471E9C6EBE0044A40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		481AF9491E9C6EBE0044A40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481AF98B1E9C860A0044A40B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		481AF98D1E9C86130044A40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		481AF98F1E9C86220044A40B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		481AF9911E9C862C0044A40B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		481AF9931E9C86350044A40B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		481AF9951E9C863C0044A40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		481AF9971E9C86620044A40B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		481AF9991E9C866D0044A40B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		481AF99B1E9C86790044A40B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		481AF99D1E9C86C20044A40B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ScanNote/opencv2.framework; sourceTree = "<group>"; };
 		48252BFA1E8B9BE7009414E3 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		4830D6E01E7A77DE00A0A869 /* iOSExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4830D6E31E7A77DE00A0A869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -425,6 +436,16 @@
 		48C43F911E8B746E00C7F4B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				481AF99D1E9C86C20044A40B /* opencv2.framework */,
+				481AF99B1E9C86790044A40B /* CoreMedia.framework */,
+				481AF9991E9C866D0044A40B /* AVFoundation.framework */,
+				481AF9971E9C86620044A40B /* UIKit.framework */,
+				481AF9951E9C863C0044A40B /* Foundation.framework */,
+				481AF9931E9C86350044A40B /* Security.framework */,
+				481AF9911E9C862C0044A40B /* SystemConfiguration.framework */,
+				481AF98F1E9C86220044A40B /* Photos.framework */,
+				481AF98D1E9C86130044A40B /* CoreGraphics.framework */,
+				481AF98B1E9C860A0044A40B /* QuartzCore.framework */,
 				48C43F921E8B746E00C7F4B0 /* UserNotifications.framework */,
 				48C43F941E8B746E00C7F4B0 /* UserNotificationsUI.framework */,
 				48E47A4D1E91EE0D00B89E5F /* IntentsUI.framework */,
@@ -699,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				481AF9481E9C6EBE0044A40B /* Assets.xcassets in Resources */,
+				481AFA191E9CC3AB0044A40B /* Assets.xcassets in Resources */,
 				481AF9461E9C6EBE0044A40B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,7 +984,7 @@
 		481AF94E1E9C6EBE0044A40B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hung Nguyen Van (PM7NBAPXN4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H4CR2L3EVK;
@@ -979,7 +1001,7 @@
 		481AF94F1E9C6EBE0044A40B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hung Nguyen Van (PM7NBAPXN4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H4CR2L3EVK;
@@ -1277,6 +1299,7 @@
 				481AF94F1E9C6EBE0044A40B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4830D6DB1E7A77DE00A0A869 /* Build configuration list for PBXProject "iOSExtension" */ = {
 			isa = XCConfigurationList;
